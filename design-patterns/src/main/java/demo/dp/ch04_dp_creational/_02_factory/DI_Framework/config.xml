@@ -1,0 +1,9 @@
+<beans>
+   <bean id="test" class="demp.dp.Test">
+      <constructor-arg ref="test2"/>
+   </bean>
+   <bean id="test2" class="demo.dp.Test2" scope="singleton" lazy-init="true">
+     <constructor-arg type="String" value="127.0.0.1"/>
+     <constructor-arg type="int" value="1234"/>
+   </bean>
+</beans>
